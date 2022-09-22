@@ -8,4 +8,4 @@
 [coolors.co](https://coolors.co/palette/cee5f2-accbe1-7c98b3-637081-536b78)
 
 ## Diagramme
-![schema]([/Meli0305/Vous-etes-le-heros-Boo/blob/main/assets/schema.png))
+![schema]([/Meli0305/Vous-etes-le-heros-Boo/blob/main/assets/schema.png)
