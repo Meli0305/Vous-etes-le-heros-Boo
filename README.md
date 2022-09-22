@@ -1,4 +1,4 @@
-![Synopsis](/papanikolaou_alexia_ps1_1/assets/synopsis.drawio.png)
+![BOO](/papanikolaou_alexia_ps1_1/assets/BOO.png)
 
 
 [Développement Web - Vous êtes le héros](https://smnarnold.com/projets/vous-etes-le-heros) <br>
