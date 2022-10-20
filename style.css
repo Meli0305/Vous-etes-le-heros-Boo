@@ -97,7 +97,6 @@ img{
     display: flex;
     align-self: center;
     background-color:  rgb(56, 54, 154);
-    
     padding: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
@@ -115,4 +114,15 @@ img{
     color: antiquewhite;
     border-radius: 10px;
     background-color:  rgb(56, 54, 154);
+}
+
+button {
+    display: flex;
+    align-self: center;
+    background-color:  rgb(56, 54, 154);
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    color: antiquewhite;
+    border-radius: 10px;
 }
