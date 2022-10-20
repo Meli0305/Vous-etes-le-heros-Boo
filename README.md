@@ -1,4 +1,4 @@
-![BOO](https://github.com/Meli0305/Vous-etes-le-heros-Boo/blob/main/assets/BOO.png)
+![BOO](https://github.com/Meli0305/Vous-etes-le-heros-Boo/blob/main/assets/img/BOO.png)
 
 
 [Développement Web - Vous êtes le héros](https://smnarnold.com/projets/vous-etes-le-heros) <br>
@@ -8,4 +8,4 @@
 [coolors.co](https://coolors.co/palette/cee5f2-accbe1-7c98b3-637081-536b78)
 
 ## Diagramme
-![schema](https://github.com/Meli0305/Vous-etes-le-heros-Boo/blob/main/assets/schema.png)
+![schema](https://github.com/Meli0305/Vous-etes-le-heros-Boo/blob/main/assets/img/schema.png)
