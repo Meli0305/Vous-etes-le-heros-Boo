@@ -3,6 +3,7 @@ let chaptersObj = {
         subtitle: "Débuter",
         text: "Tu a deux choix de pièce. Il y a la cuisine et la salle de bain. Chacune des personnes est dans une pièce. Ou veux-tu aller?",
         img: "Shovel_ref.png",
+        video: "ezgif.com-gif-maker.mp4",
         options: [
             {optionText: "cuisine", action: "goToChapter('cuisine')"},
             {optionText: "toilette", action: "goToChapter('toilette')"},
@@ -12,7 +13,7 @@ let chaptersObj = {
     cuisine: {
         subtitle: "Cusine",
         text: "Dans la cuisine tu vois quatre item auquel tu peux intéragir.",
-        img: "NAME_OF_IMAGE.png",
+        img: "cuisine.jpg",
         options: [
             {optionText: "assiettes", action: "goToChapter('assiettes')"},
          {optionText: "chat", action: "goToChapter('chat')"},
@@ -24,7 +25,7 @@ let chaptersObj = {
     assiettes: {
         subtitle: "Renverser les assiettes",
         text: "Tu decides de faire tomber les assiettes mais cela ne fait pas peur.",
-        img: "NAME_OF_IMAGE.png",
+        img: "broken.jpg",
         options: [
             {optionText: "renvoyer", action: "goToChapter('renvoyer')"},
     ]
@@ -33,7 +34,7 @@ let chaptersObj = {
     chat: {
         subtitle: "Le chat",
         text: "Tu appercois le chat. Veux-tu le peindre en rouge?",
-        img: "NAME_OF_IMAGE.png",
+        img: "chat.jpg",
         options: [
         {optionText: "oui", action: "verifirougelevre()"}
     ]
@@ -42,7 +43,7 @@ let chaptersObj = {
     ouirouge: {
         subtitle: "Le chat en rouge",
         text: "Tu paint le chat en rouge pour simmuler du sang mais cela ne fait pas peur.",
-        img: "NAME_OF_IMAGE.png",
+        img: "chatrouge.jpg",
         options:[ {optionText: "oui", action: "goToChapter('renvoyer')"}
     ],
         
@@ -51,7 +52,7 @@ let chaptersObj = {
     nonrouge: {
         subtitle: "Bon chat!",
         text: "Tu na rien pour peindre le chat en rouge donc tu flattes le chat à la place.",
-        img: "NAME_OF_IMAGE.png",
+        img: "chat.jpg",
         options:[ {optionText: "retour", action: "goToChapter('Le_debut')"}],
         
     },
@@ -60,7 +61,7 @@ let chaptersObj = {
     four: {
         subtitle: "Four",
         text: "Tu veux monter la température du four. Peu-tu enlever le détecteur de fumer? ",
-        img: "NAME_OF_IMAGE.png",
+        img: "oven.png",
         options: [
             {optionText: "oui", action: "echec()"},]
         
@@ -68,8 +69,8 @@ let chaptersObj = {
 
     ouidetect: {
         subtitle: "Le feu!",
-        text: " Le feu a pris dans la maison et cela à apeurer les deux humains.",
-        img: "NAME_OF_IMAGE.png",
+        text: " Le feu a pris dans la maison et cela à apeuré les deux humains.",
+        img: "smoke_alarm.jpg",
         options:[ {optionText: "Danger", action: "goToChapter('pas_renvoyer')"}]
         
     },
@@ -77,7 +78,7 @@ let chaptersObj = {
     nondetect: {
         subtitle: "Rien",
         text: "cela na pas fait peur a la personne mais tu est dans la bonne voie. ",
-        img: "NAME_OF_IMAGE.png",
+        img: "smoke_alarm.jpg",
         options: [
             {optionText: "retour", action: "goToChapter('Le_debut')"}
         ]
@@ -86,7 +87,7 @@ let chaptersObj = {
     detecteur: {
         subtitle: "Detecteur de fumer",
         text: "Tu vois que tu peux devicer le detecteur. As-tu un tournevice?",
-        img: "NAME_OF_IMAGE.png",
+        img: "smoke_alarm.jpg",
         options: [
             {optionText: "ouitourne", action: "tournevisget()"},]
         },
@@ -94,7 +95,7 @@ let chaptersObj = {
     ouitourne: {
         subtitle: "Enlever le detecteur",
         text: "Tu enleves le detecteur de fumer",
-        img: "NAME_OF_IMAGE.png",
+        img: "smoke_alarm.jpg",
         options: [
             {optionText: "retour", action: "goToChapter('Le_debut')"},
         ]
@@ -103,7 +104,7 @@ let chaptersObj = {
     nontourne: {
         subtitle: "Tu peux rien faire",
         text: "Tu ne peux pas rien faire pour l'instant. Mais tu est dans la bonne vois.",
-        img: "NAME_OF_IMAGE.png",
+        img: "smoke_alarm.jpg",
         options: [{optionText: "ouitourne", action: "goToChapter('ouitourne')"},
         {optionText: "nontourne", action: "goToChapter('nontourne')"}]
     },
@@ -111,10 +112,9 @@ let chaptersObj = {
     toilette: {
         subtitle: "Toilette",
         text: "Tu as trois option à interagir dans la salle de bain. Avec lequel veux tu interagir?",
-        img: "NAME_OF_IMAGE.png",
+        img: "toilette.jpg",
         options: [
         {optionText: "outil", action: "goToChapter('outil')"},
-         {optionText: "mirroir", action: "goToChapter('miroir')"},
          {optionText: "maquillage", action: "goToChapter('maquillage')"}
     ]
     },
@@ -122,7 +122,7 @@ let chaptersObj = {
     outil: {
         subtitle: "Un tournevis!",
         text: "Tu trouve un tournevis.",
-        img: "NAME_OF_IMAGE.png",
+        img: "tournevis.jpg",
         options:[ {optionText: "retour", action: "goToChapter('Le_debut')"}
     ]
     },
@@ -130,65 +130,9 @@ let chaptersObj = {
     maquillage: {
         subtitle: "un rouge à levre",
         text: "Tu trouve un rouge a levre",
-        img: "NAME_OF_IMAGE.png",
+        img: "makeup.jpg",
         options: [
             {optionText: "retour", action: "rougelevreget()"}
-    ]
-    },
-
-    miroir: {
-        subtitle: "Écriture sur le mirroir",
-        text: "As-tu quelque chose pour ecrire sur le miroir?",
-        img: "NAME_OF_IMAGE.png",
-        options:[ 
-            {optionText: "oui", action: "rougelevremirroirget()"},
-    ]
-    },
-
-    nonmiroir: {
-        subtitle: "Écriture sur le mirroir",
-        text: "Tu nas rien a écrire sur le miroir.",
-        img: "NAME_OF_IMAGE.png",
-        options:[ 
-            {optionText: "retour", action: "goToChapter('Le_debut')"}
-    ]
-    },
-
-    ouimiroir: {
-        subtitle: "Écriture sur le mirroir",
-        text: "Tu as trois idee pour ecrire dans le miroir. Que choisis tu?",
-        img: "NAME_OF_IMAGE.png",
-        options: [ 
-        {optionText: "ecrire bonjour", action: "goToChapter('bonjour')"},
-        {optionText: "faire un bonhomme sourire", action: "goToChapter('sourire')"},
-        {optionText: "Je te vois", action: "goToChapter('vois')"},
-    ]
-    },
-
-    bonjour: {
-        subtitle: "Renvoyer",
-        text: "TEXT_EXPLAINING_THE_CHAPTER",
-        img: "NAME_OF_IMAGE.png",
-        options: [
-            {optionText: "recommencer", action: "goToChapter('renvoyer')"}
-    ]
-    },
-
-    sourire: {
-        subtitle: "Renvoyer",
-        text: "TEXT_EXPLAINING_THE_CHAPTER",
-        img: "NAME_OF_IMAGE.png",
-        options:[ 
-            {optionText: "recommencer", action: "goToChapter('renvoyer')"}
-    ]
-    },
-
-    vois: {
-        subtitle: "Renvoyer",
-        text: "TEXT_EXPLAINING_THE_CHAPTER",
-        img: "NAME_OF_IMAGE.png",
-        options:[ 
-            {optionText: "recommencer", action: "goToChapter('pas_renvoyer')"}
     ]
     },
 
@@ -196,6 +140,7 @@ let chaptersObj = {
         subtitle: "Renvoyer",
         text: "Tu est renvoyer",
         img: "NAME_OF_IMAGE.png",
+        video: "gameover.mp4",
         options:[ 
             {optionText: "recommencer", action: "goToChapter('Le_debut')"}
     ]
@@ -204,7 +149,7 @@ let chaptersObj = {
     pas_renvoyer: {
         subtitle: "pas Renvoyer?",
         text: "Tu as gagner!",
-        img: "NAME_OF_IMAGE.png",
+        img: "images.jpg",
         options:[ 
             {optionText: "recommencer", action: "goToChapter('Le_debut')"}
     ]
@@ -212,12 +157,23 @@ let chaptersObj = {
 
 };
 
+
 function goToChapter(chapterName) {
+   localStorage.setItem("Name",[chapterName]);
+    
+    let audio = new Audio("./assets/img/retro.mp3");
+audio.volume = 0.2;
+audio.play();
     console.log(chaptersObj[chapterName]["subtitle"]);
     console.log(chaptersObj[chapterName]["text"]);
     document.querySelector("h2").innerHTML = chaptersObj[chapterName]["subtitle"];
     document.querySelector("p").innerHTML = chaptersObj[chapterName]["text"];
-    document.querySelector(".img-change").innerHTML= `<img src="../assets/img/` + chaptersObj[chapterName]["img"] + `" class="image">`;
+    if(chaptersObj[chapterName]["video"]){
+        document.querySelector(".img-change").innerHTML= `<video src="../assets/img/${chaptersObj[chapterName]["video"]}" class="video" loop muted autoplay></video>`;
+    }else{
+      document.querySelector(".img-change").innerHTML= `<img src="../assets/img/` + chaptersObj[chapterName]["img"] + `" class="image">`;  
+    }
+    
     let optionTableau = document.querySelector('.btn')
     optionTableau.innerHTML= "";
     for(element of chaptersObj[chapterName]["options"]){
@@ -227,14 +183,20 @@ function goToChapter(chapterName) {
         let btnText = document.createTextNode(element["optionText"]);
         btnAdd.appendChild(btnText);
         optionTableau.appendChild(btnAdd);
+        
     }
     
 };
 
-let rougelevre = false;
+localStorage.setItem("rougelevre" , false);
+localStorage.setItem("tournevis" , false);
+localStorage.setItem("four" , false);
+
+let rougelevre = Boolean("rougelevre");
 
 function rougelevreget() {
-    rougelevre = true; 
+    localStorage.setItem("rougelevre", true) ;
+    rougelevretrouver = Boolean("rougelevre");
     goToChapter('Le_debut');
   }
 
@@ -246,10 +208,10 @@ function rougelevreget() {
     }
   }
 
-  let fouralarme = false;
+  let fouralarme = Boolean("four");
 
   function echec() {
-    fouralarme = true; 
+    fouralarme = Boolean("four"); 
     goToChapter('Le_debut');
   }
 
@@ -261,10 +223,11 @@ function rougelevreget() {
     }
   }
 
-  let detecteurfumer = false;
+  let detecteurfumer = Boolean("tournevis");
 
   function tournevisget() {
-    detecteurfumer = true; 
+    localStorage.setItem("tournevis", true) ;
+    rougelevretrouver = Boolean("tournevis"); 
     goToChapter('Le_debut');
   }
 
@@ -276,18 +239,16 @@ function rougelevreget() {
     }
   }
 
-  let rougelevremirroir = false;
 
-function rougelevremirroirget() {
-    rougelevremirroir = true; 
-    goToChapter('Le_debut');
-  }
-
-  function rougelevremirroirverifi() {
-    if(rougelevremirroir==true){
-    goToChapter('ouimiroir');
-    }else{
-    goToChapter('nonmiroir'); 
+  let dernierchap =localStorage.getItem("Name")
+function startGame() {
+    
+    if (dernierchap !== "Le_debut"){
+       goToChapter(dernierchap) 
+    } else {
+        goToChapter("Le_debut")
     }
-  }
+}
+
+startGame()
   
