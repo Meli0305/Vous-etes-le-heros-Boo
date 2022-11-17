@@ -65,10 +65,15 @@ p{
     margin-top: 0px;
 }
 
+.img-change{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 img{
     display: flex;
     max-width: 250px;
-    align-self: flex-start;
     align-self: center;
     border-radius: 50px;
 }

@@ -192,7 +192,7 @@ localStorage.setItem("rougelevre" , false);
 localStorage.setItem("tournevis" , false);
 localStorage.setItem("four" , false);
 
-let rougelevre = Boolean("rougelevre");
+let rougelevre = false;
 
 function rougelevreget() {
     localStorage.setItem("rougelevre", true) ;
@@ -208,7 +208,7 @@ function rougelevreget() {
     }
   }
 
-  let fouralarme = Boolean("four");
+  let fouralarme = false;
 
   function echec() {
     fouralarme = Boolean("four"); 
@@ -223,7 +223,7 @@ function rougelevreget() {
     }
   }
 
-  let detecteurfumer = Boolean("tournevis");
+  let detecteurfumer = false;
 
   function tournevisget() {
     localStorage.setItem("tournevis", true) ;
@@ -242,7 +242,7 @@ function rougelevreget() {
 
   let dernierchap =localStorage.getItem("Name")
 function startGame() {
-    
+    goToChapter("Le_debut")
     if (dernierchap !== "Le_debut"){
        goToChapter(dernierchap) 
     } else {
