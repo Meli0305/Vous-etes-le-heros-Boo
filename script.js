@@ -142,7 +142,8 @@ let chaptersObj = {
         img: "NAME_OF_IMAGE.png",
         video: "gameover.mp4",
         options:[ 
-            {optionText: "recommencer", action: "goToChapter('Le_debut')"}
+            {optionText: "recommencer", action: "goToChapter('Le_debut')"},
+            {optionText: "effacer ma partie", action: "reset()"}
     ]
     },
 
@@ -151,7 +152,8 @@ let chaptersObj = {
         text: "Tu as gagner!",
         img: "images.jpg",
         options:[ 
-            {optionText: "recommencer", action: "goToChapter('Le_debut')"}
+            {optionText: "recommencer", action: "goToChapter('Le_debut')"},
+            {optionText: "effacer ma partie", action: "reset()"}
     ]
     },
 
@@ -160,10 +162,24 @@ let chaptersObj = {
 
 function goToChapter(chapterName) {
    localStorage.setItem("Name",[chapterName]);
-    
-    let audio = new Audio("./assets/img/retro.mp3");
+   let audionon = true;
+   if(audionon=true){
+       let audio = new Audio("./assets/img/retro.mp3");
+    audio.currentTime=0;
 audio.volume = 0.2;
 audio.play();
+
+let son = document.querySelector(".check");
+if(son=checked){
+    audio.volume = 0.2;
+audio.play();
+}else{
+    audio.pause();
+}
+
+   }
+    //query selector nom variable.checked
+    
     console.log(chaptersObj[chapterName]["subtitle"]);
     console.log(chaptersObj[chapterName]["text"]);
     document.querySelector("h2").innerHTML = chaptersObj[chapterName]["subtitle"];
@@ -252,3 +268,13 @@ function startGame() {
 
 startGame()
   
+function reset(){
+    let rougelevre = false;
+    let fouralarme = false;
+    let detecteurfumer = false;
+    localStorage.removeItem("rougelevre");
+    localStorage.removeItem("tournevis");
+    localStorage.removeItem("four");
+    goToChapter("Le_debut");
+}
+
