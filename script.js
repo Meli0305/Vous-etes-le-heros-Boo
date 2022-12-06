@@ -162,22 +162,19 @@ let chaptersObj = {
 
 function goToChapter(chapterName) {
    localStorage.setItem("Name",[chapterName]);
-   let audionon = true;
-   if(audionon=true){
-       let audio = new Audio("./assets/img/retro.mp3");
-    audio.currentTime=0;
-audio.volume = 0.2;
-audio.play();
+
+   let body = document.querySelector("body");
+   body.setAttribute("class",[chapterName])
 
 let son = document.querySelector(".check");
-if(son=checked){
+sonplaying = son.checked
+if(sonplaying==true){
+    const audio = new Audio("./assets/img/retro.mp3");
+    audio.currentTime=0;
     audio.volume = 0.2;
 audio.play();
-}else{
-    audio.pause();
 }
 
-   }
     //query selector nom variable.checked
     
     console.log(chaptersObj[chapterName]["subtitle"]);
@@ -212,7 +209,7 @@ let rougelevre = false;
 
 function rougelevreget() {
     localStorage.setItem("rougelevre", true) ;
-    rougelevretrouver = Boolean("rougelevre");
+    rougelevre = Boolean("rougelevre");
     goToChapter('Le_debut');
   }
 
@@ -228,7 +225,7 @@ function rougelevreget() {
 
   function echec() {
     fouralarme = Boolean("four"); 
-    goToChapter('Le_debut');
+    goToChapter('pas_renvoyer');
   }
 
   function echecverifi() {
@@ -243,7 +240,7 @@ function rougelevreget() {
 
   function tournevisget() {
     localStorage.setItem("tournevis", true) ;
-    rougelevretrouver = Boolean("tournevis"); 
+    detecteurfumer = Boolean("tournevis"); 
     goToChapter('Le_debut');
   }
 
@@ -269,9 +266,9 @@ function startGame() {
 startGame()
   
 function reset(){
-    let rougelevre = false;
-    let fouralarme = false;
-    let detecteurfumer = false;
+    rougelevre = false;
+    fouralarme = false;
+    detecteurfumer = false;
     localStorage.removeItem("rougelevre");
     localStorage.removeItem("tournevis");
     localStorage.removeItem("four");

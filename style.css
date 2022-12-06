@@ -131,3 +131,11 @@ button {
     color: antiquewhite;
     border-radius: 10px;
 }
+
+.renvoyer{
+    background-color: rgb(224, 64, 99);
+}
+
+.pas_renvoyer{
+    background-color: rgb(77, 224, 64);
+}
