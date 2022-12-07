@@ -182,9 +182,9 @@ audio.play();
     document.querySelector("h2").innerHTML = chaptersObj[chapterName]["subtitle"];
     document.querySelector("p").innerHTML = chaptersObj[chapterName]["text"];
     if(chaptersObj[chapterName]["video"]){
-        document.querySelector(".img-change").innerHTML= `<video src="/assets/img/${chaptersObj[chapterName]["video"]}" class="video" loop muted autoplay></video>`;
+        document.querySelector(".img-change").innerHTML= `<video src="assets/img/${chaptersObj[chapterName]["video"]}" class="video" loop muted autoplay></video>`;
     }else{
-      document.querySelector(".img-change").innerHTML= `<img src="/assets/img/` + chaptersObj[chapterName]["img"] + `" class="image">`;  
+      document.querySelector(".img-change").innerHTML= `<img src="assets/img/` + chaptersObj[chapterName]["img"] + `" class="image">`;  
     }
     
     let optionTableau = document.querySelector('.btn')
