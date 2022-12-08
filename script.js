@@ -1,7 +1,7 @@
 let chaptersObj = {
     Le_debut: {
         subtitle: "Débuter",
-        text: "Tu a deux choix de pièce. Il y a la cuisine et la salle de bain. Chacune des personnes est dans une pièce. Ou veux-tu aller?",
+        text: "Tu es un fantôme qui travail dans une industrie de peur. Ton patron est faché, car tu ne fait pas peur c'est dernier temps. Donc, il te laisse une dernière chance pour te rattraper et t'envoie dans une maison. Tu a deux choix de pièce. Il y a la cuisine et la salle de bain. Ou veux-tu aller?",
         img: "Shovel_ref.png",
         video: "ezgif.com-gif-maker.mp4",
         options: [
@@ -12,7 +12,7 @@ let chaptersObj = {
 
     cuisine: {
         subtitle: "Cusine",
-        text: "Dans la cuisine tu vois quatre item auquel tu peux intéragir.",
+        text: "Dans la cuisine, tu vois quatre items auquel tu peux intéragir.",
         img: "cuisine.jpg",
         options: [
             {optionText: "assiettes", action: "goToChapter('assiettes')"},
@@ -33,7 +33,7 @@ let chaptersObj = {
 
     chat: {
         subtitle: "Le chat",
-        text: "Tu appercois le chat. Veux-tu le peindre en rouge?",
+        text: "Tu appercois le chat. Veux-tu le peindre en rouge pour simmuler du sang?",
         img: "chat.jpg",
         options: [
         {optionText: "oui", action: "verifirougelevre()"}
@@ -42,7 +42,7 @@ let chaptersObj = {
 
     ouirouge: {
         subtitle: "Le chat en rouge",
-        text: "Tu paint le chat en rouge pour simmuler du sang mais cela ne fait pas peur.",
+        text: "Tu paint le chat en rouge, mais cela ne fait pas peur.",
         img: "chatrouge.jpg",
         options:[ {optionText: "oui", action: "goToChapter('renvoyer')"}
     ],
@@ -51,7 +51,7 @@ let chaptersObj = {
 
     nonrouge: {
         subtitle: "Bon chat!",
-        text: "Tu na rien pour peindre le chat en rouge donc tu flattes le chat à la place.",
+        text: "Tu n'as rien pour peindre le chat en rouge, donc tu flattes le chat à la place.",
         img: "chat.jpg",
         options:[ {optionText: "retour", action: "goToChapter('Le_debut')"}],
         
@@ -60,7 +60,7 @@ let chaptersObj = {
 
     four: {
         subtitle: "Four",
-        text: "Tu veux monter la température du four. Peu-tu enlever le détecteur de fumer? ",
+        text: "Tu veux monter la température du four. Peux-tu enlever le détecteur de fumer? ",
         img: "oven.png",
         options: [
             {optionText: "oui", action: "echec()"},]
@@ -69,7 +69,7 @@ let chaptersObj = {
 
     ouidetect: {
         subtitle: "Le feu!",
-        text: " Le feu a pris dans la maison et cela à apeuré les deux humains.",
+        text: " Le feu a pris dans la maison et cela a apeuré les deux humains.",
         img: "smoke_alarm.jpg",
         options:[ {optionText: "Danger", action: "goToChapter('pas_renvoyer')"}]
         
@@ -77,7 +77,7 @@ let chaptersObj = {
 
     nondetect: {
         subtitle: "Rien",
-        text: "cela na pas fait peur a la personne mais tu est dans la bonne voie. ",
+        text: "Cela ne fait pas peur à la personne, mais tu es dans la bonne voie. ",
         img: "smoke_alarm.jpg",
         options: [
             {optionText: "retour", action: "goToChapter('Le_debut')"}
@@ -86,7 +86,7 @@ let chaptersObj = {
 
     detecteur: {
         subtitle: "Detecteur de fumer",
-        text: "Tu vois que tu peux devicer le detecteur. As-tu un tournevice?",
+        text: "Tu vois que tu peux dévisser le détecteur. As-tu un tournevis?",
         img: "smoke_alarm.jpg",
         options: [
             {optionText: "ouitourne", action: "tournevisget()"},]
@@ -94,7 +94,7 @@ let chaptersObj = {
 
     ouitourne: {
         subtitle: "Enlever le detecteur",
-        text: "Tu enleves le detecteur de fumer",
+        text: "Tu enlèves le détecteur de fumer",
         img: "smoke_alarm.jpg",
         options: [
             {optionText: "retour", action: "goToChapter('Le_debut')"},
@@ -103,7 +103,7 @@ let chaptersObj = {
 
     nontourne: {
         subtitle: "Tu peux rien faire",
-        text: "Tu ne peux pas rien faire pour l'instant. Mais tu est dans la bonne vois.",
+        text: "Tu ne peu rien faire pour l'instant. Mais tu es dans la bonne voie.",
         img: "smoke_alarm.jpg",
         options: [{optionText: "ouitourne", action: "goToChapter('ouitourne')"},
         {optionText: "nontourne", action: "goToChapter('nontourne')"}]
@@ -111,7 +111,7 @@ let chaptersObj = {
 
     toilette: {
         subtitle: "Toilette",
-        text: "Tu as trois option à interagir dans la salle de bain. Avec lequel veux tu interagir?",
+        text: "Tu as deux option à intéragir dans la salle de bain. Avec lequel veux-tu intéragir?",
         img: "toilette.jpg",
         options: [
         {optionText: "outil", action: "goToChapter('outil')"},
@@ -121,7 +121,7 @@ let chaptersObj = {
 
     outil: {
         subtitle: "Un tournevis!",
-        text: "Tu trouve un tournevis.",
+        text: "Tu trouves un tournevis.",
         img: "tournevis.jpg",
         options:[ {optionText: "retour", action: "goToChapter('Le_debut')"}
     ]
@@ -129,7 +129,7 @@ let chaptersObj = {
 
     maquillage: {
         subtitle: "un rouge à levre",
-        text: "Tu trouve un rouge a levre",
+        text: "Tu trouves un rouge à levre",
         img: "makeup.jpg",
         options: [
             {optionText: "retour", action: "rougelevreget()"}
@@ -138,7 +138,7 @@ let chaptersObj = {
 
     renvoyer: {
         subtitle: "Renvoyer",
-        text: "Tu est renvoyer",
+        text: "Tu es renvoyé(e)",
         img: "NAME_OF_IMAGE.png",
         video: "gameover.mp4",
         options:[ 
@@ -148,8 +148,8 @@ let chaptersObj = {
     },
 
     pas_renvoyer: {
-        subtitle: "pas Renvoyer?",
-        text: "Tu as gagner!",
+        subtitle: "pas Renvoyer!!!",
+        text: "Tu as gagné(e)!",
         img: "images.jpg",
         options:[ 
             {optionText: "recommencer", action: "goToChapter('Le_debut')"},
