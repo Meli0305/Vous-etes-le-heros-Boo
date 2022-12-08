@@ -1,6 +1,6 @@
 ![BOO](https://github.com/Meli0305/Vous-etes-le-heros-Boo/blob/main/assets/img/BOO.png)
 
-En ligne: http://meli0305.github.io/vous-etes-le-heros-boo
+En ligne:  https://meli0305.github.io/Vous-etes-le-heros-Boo/
 
 [Développement Web - Vous êtes le héros](https://smnarnold.com/projets/vous-etes-le-heros) <br>
 **Genre**: Fantôme, Peur, Hanté <br>
